@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mayúsculas</title>
+</head>
+
+<body>
+    <label for="texto">Escribe algo:</label>
+    <input type="text" id="texto">
+    <button class="btn" type="button">Convertir mensaje a mayusculas</button>
+    <!-- aca va el resultado tal cual se escribe -->
+    <p id="resultado"></p>
+    <!-- aca va el resultado en mayusculas -->
+    <p id="resultadoMayusculas"></p>
+
+    <script>
+        const input = document.querySelector('#texto');
+        const resultado = document.querySelector('#resultado');
+        const resultadoMayusculas = document.querySelector("#resultadoMayusculas")
+        const botonAgregar = document.querySelector(".btn")
+
+        botonAgregar.addEventListener('click', function () {
+            const texto = input.value.toUpperCase();
+            resultado.textContent = texto;
+    
+            /*
+            Se puede utilizar los siguientes mètodos de instancia: getElementById y getElementsByClassName, asì:
+            const input=getElementById("#texto")
+            const input= getElementsByClassName
+            */
+           
+            });
+    </script>
+
+</body>
+</html>
